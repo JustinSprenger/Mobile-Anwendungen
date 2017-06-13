@@ -1,5 +1,7 @@
 package database;
 
+import javafx.scene.control.ProgressBar;
+
 public class InfoThread implements Runnable {
 
 	private long filesize;
@@ -19,7 +21,12 @@ public class InfoThread implements Runnable {
 		while(run)
 		{
 			System.out.println("status : " + this.filesize + " Byte");
-			try{Thread.sleep(this.wait);}catch(Exception e){e.printStackTrace();}
+			
+			try{
+				Thread.sleep(this.wait);
+			}catch(Exception e){
+				e.printStackTrace();
+			}
 		}
 	}
 	
