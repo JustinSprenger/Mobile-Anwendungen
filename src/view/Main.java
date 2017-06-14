@@ -158,13 +158,13 @@ public class Main extends Application {
 		primaryStage.setScene(scene);
 		
 		primaryStage.show();
-		
-		speed.setOnAction(new EventHandler<ActionEvent>(){
-			@Override
-			public void handle(ActionEvent event) {
-				result.setText(result.getText() + Speed.getSpeed());
-			}
+		speed.setOnAction((event)->{
+			result.setText(result.getText() + Speed.getSpeed());
+			Thread t = new Thread(()->{
+				
+			});
 		});
+		
 		
 		logout.setOnAction(new EventHandler<ActionEvent>() {
 
