@@ -21,7 +21,7 @@ public class Test {
 		**/
 		System.out.println("Datenbank-TEST");
 		Database db = new Database("angewandteinfo.spdns.org",3306,"test","Justin","Tresor132");
-		String[] val = new String[]{"'192.168.178.230','22000','02:55','20.04.2017','Sprenger'"};
+		String[] val = new String[]{"'192.168.178.231','22000','02:55','20.04.2017','Sprenger'"};
 		//System.out.println(db.connect());
 		db.insertDatabase("t_Accounts", val);
 		

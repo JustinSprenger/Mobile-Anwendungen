@@ -113,6 +113,8 @@ public class Main extends Application {
 		
 		VBox vbox = new VBox(1);
 		vbox.getChildren().addAll(flpane1,flpane2,flpane3,flpane4,flpane5,flpane6,flpane7);
+		vbox.alignmentProperty();
+		
 		
 		Scene scene = new Scene(vbox,300,300);
 		primaryStage.setScene(scene);
@@ -150,6 +152,7 @@ public class Main extends Application {
 		flpane3.getChildren().add(result);
 		VBox vbox = new VBox(1);
 		vbox.getChildren().addAll(flpane1,flpane2,flpane3);
+		vbox.alignmentProperty();
 		Scene scene = new Scene(vbox,600,350);
 		
 		primaryStage.setScene(scene);

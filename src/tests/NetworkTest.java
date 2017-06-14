@@ -1,6 +1,8 @@
-package database;
+package tests;
 
 import java.net.SocketException;
+
+import database.Network;
 
 public class NetworkTest {
 
