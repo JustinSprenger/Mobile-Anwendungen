@@ -18,7 +18,9 @@ public class Speed {
 		long length=0;
 		int counter=0;
 		try {
-			URL url = new URL("http://blnarroganz.bplaced.de/test.txt");
+			//URL url = new URL("http://blnarroganz.bplaced.de/test.txt");
+			URL url = new URL("https://download.microsoft.com/download/7/0/3/703455ee-a747-4cc8-bd3e-98a615c3aedb/dotNetFx35setup.exe");
+			
 			//URL url = new URL("http://blnarroganz.bplaced.de/octave-4.0.0_0-installer.exe");
 			
 			InfoThread r = new InfoThread(1000);
