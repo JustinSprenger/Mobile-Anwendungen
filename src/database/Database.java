@@ -54,7 +54,7 @@ public class Database {
 		try {
 			conn = DriverManager.getConnection("jdbc:mysql://"+address+":"+port+"/"+database+"?"+"user=" + user +"&"+"password=" + pass);
 			Statement stmt=conn.createStatement();
-			ResultSet rs=stmt.executeQuery("select * from t_Accounts"); 
+			ResultSet rs=stmt.executeQuery("select * from t_Messungen"); 
 			while(rs.next()){
 				System.out.println(rs.getString(1)+"  "+rs.getInt(2)+"  "+rs.getString(3)+"  "+rs.getString(4)+"  "+rs.getString(5));
 				id = rs.getRow();
