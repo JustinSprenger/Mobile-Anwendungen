@@ -1,4 +1,12 @@
 Manifest-Version: 1.0
+<<<<<<< HEAD
 Sealed: true
 Main-Class: tests.SppedTest
+=======
+<<<<<<< HEAD
+Sealed: true
+=======
+>>>>>>> 50f4bb14997b3589de00f28e53aeb02af680e362
+Main-Class: view.Main
+>>>>>>> b0b5af745e7d17123f8c7b0152e118c549f630f7
 

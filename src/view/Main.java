@@ -159,10 +159,12 @@ public class Main extends Application {
 		
 		primaryStage.show();
 		speed.setOnAction((event)->{
-			result.setText(result.getText() + Speed.getSpeed());
+			
 			Thread t = new Thread(()->{
+				result.setText(result.getText() + Speed.getSpeed());
 				
 			});
+			t.run();
 		});
 		
 		
